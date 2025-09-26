@@ -27,3 +27,6 @@ The initial model showed severe overfitting (Val Loss>81). We performed optimiz
 # Final Results Analysis
 
 To solve the severe overfitting problem, we gradually reduced the Learning Rate from 0.001 to 0.00001 and simplified the architecture. As a result of these efforts, our model was able to overcome memorization of the training data. The stable 70%+ Train and Validation Accuracy rate we achieved proves that the model correctly learned the patterns in the data and made reliable generalizations on new images. Considering the nature of the dataset and the limited number of images, this rate is a strong result showing that overfitting was successfully controlled.
+
+
+https://www.kaggle.com/code/iremarii/brain-cell
