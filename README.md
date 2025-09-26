@@ -24,3 +24,6 @@ The initial model showed severe overfitting (Val Loss>81). We performed optimiz
 
         Model Compression: In the final and most successful trial, we reduced the size of the fully connected (Dense) layers from 128→64 to a smaller funnel of 64→32. This dramatically reduced the total number of trainable parameters, curbing the model's ability to overfit.
 
+# Final Results Analysis
+
+To solve the severe overfitting problem, we gradually reduced the Learning Rate from 0.001 to 0.00001 and simplified the architecture. As a result of these efforts, our model was able to overcome memorization of the training data. The stable 70%+ Train and Validation Accuracy rate we achieved proves that the model correctly learned the patterns in the data and made reliable generalizations on new images. Considering the nature of the dataset and the limited number of images, this rate is a strong result showing that overfitting was successfully controlled.
