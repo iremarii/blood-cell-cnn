@@ -16,13 +16,10 @@ Evaluate with Confusion Matrix, Classification Report, and Grad-CAM
 Modern CNN techniques have been used to enhance the stability and generalization ability of the model.
 # Hyperparameter Optimization
 The initial model showed severe overfitting (Val Loss>81). We performed optimization to fix this problem.
-     To mitigate this aggressive memorization, we conducted several optimization trials:
-
-        Increased Regularization: The Dropout rate was increased from 0.4 to 0.5 to force the network to generalize better and break the dependencies between neurons.
+To mitigate this aggressive memorization, we conducted several optimization trials:
 
         Reduced Learning Rate: To ensure the model found the optimal solution slowly and carefully, the Learning Rate was significantly reduced from 0.001 to 0.0005, and later to a final rate of 0.0001.
 
-        Model Compression: In the final and most successful trial, we reduced the size of the fully connected (Dense) layers from 128→64 to a smaller funnel of 64→32. This dramatically reduced the total number of trainable parameters, curbing the model's ability to overfit.
 
 # Final Results Analysis
 
